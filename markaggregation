@@ -1,0 +1,38 @@
+   import java.util.Scanner;
+class markagg{
+public static void main(String [] args){
+int a,b,c,d,i,total;
+Scanner sc = new Scanner(System.in);
+System.out.print("enter the py mark;");
+a=sc.nextInt();
+System.out.print("enter the c pro mark;");
+b=sc.nextInt();
+System.out.print("enter the math mark;");
+c=sc.nextInt();
+System.out.print("enter the phy mark;");
+d=sc.nextInt();
+total=a+b+c+d;
+System.out.print(total);
+double agg=(total*100)/400;
+System.out.print(agg);
+if(agg>75 && agg<=100)
+{
+System.out.print("distinction;");
+}
+else if (agg>60 && agg<=75)
+{
+System.out.print("first divi");
+}
+else if (agg>50 && agg<=60)
+{
+System.out.print("second divi");
+}
+else if(agg>40 && agg<50)
+{
+System.out.print("third divi");
+}
+else if(agg<40)
+{
+System.out.print("fail");
+}
+}}
