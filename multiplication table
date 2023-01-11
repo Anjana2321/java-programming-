@@ -1,0 +1,15 @@
+import java.util.Scanner;
+class multable{
+public static void main(String[] args){
+Scanner sc = new Scanner(System.in);
+int i,m,n;
+System.out.print("no of row needed m=");
+m=sc.nextInt();
+System.out.print("tables needed n=");
+n=sc.nextInt();
+for(i=1;i<=m;i++)
+{
+System.out.println(i+"*"+n+"="+(n*i));
+}
+}
+}
