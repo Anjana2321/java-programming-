@@ -1,0 +1,30 @@
+import java.util.*;
+import java.util.Scanner;
+class count{
+	public static void main(String args[]){
+			Scanner sc=new Scanner(System.in);
+			int i,uc=0,lc=0,nc=0;
+			String a=" "; 
+			while(a.charAt(0)!=0)
+			{	
+					System.out.println("enter  a char;");
+					a=sc.nextLine();
+			if(Character.isUpperCase(a.charAt(0)))
+				{
+					uc=uc+1;
+				}
+			else if(Character.isLowerrCase(a.charAt(0)))
+				{
+					lc=lc+1;
+				}
+			else if(Character.isDigit(a.charAt(0)))
+				{
+					nc=nc+1;
+				}
+			}
+System.out.println("upper case"+uc);
+System.out.println("lowercase"+lc);
+
+System.out.println("digit"+nc);
+}}
+
