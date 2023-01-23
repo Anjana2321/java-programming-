@@ -1,0 +1,24 @@
+import java.util.*;
+import java.util.Scanner;
+class ArraySquare{
+	public static void main(String args[]){
+		Scanner sc=new Scanner(System.in);
+		int l,u;
+		System.out.print("Enter the lower limit : ");
+		l=sc.nextInt();
+		System.out.print("Enter the upper limit : ");
+		u=sc.nextInt();
+		List<Integer> l2=new ArrayList<Integer>();
+		for(int i=l;i<u;i++)
+		{
+			l2.add(i);
+			l2.add(i*i);
+			List<Integer> l1= new ArayList<>(l2);	
+			l2.clear();
+		}	
+		List<Integer> l= new ArayList<>(l1);
+		System.out.println(l);
+	}
+}
+		
+		
