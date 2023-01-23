@@ -1,0 +1,37 @@
+import java.util.Scanner;
+import java.util.*;
+class PerfectSquare{
+	public static int add(int j){
+		int rem,sum=0;
+		while(j!=0)
+		{
+			rem=j%10;
+			sum=sum+rem;
+			j=j/10;
+		}
+		return sum;
+	}
+	public static void main(String args[]){
+		int i,l,u;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter lower range : ");
+		l=sc.nextInt();
+		System.out.println("Enter upper range : ");
+		u=sc.nextInt();
+		List<Integer> list= new ArrayList<Integer>();
+		if(u>l)
+		{
+			for(i=l;i<=u;i++)
+			{	
+				double sqrt=Math.sqrt(i);
+				if(sqrt-Math.floor(sqrt)==0 && add(i)<10)
+				{
+					list.add(i);
+				}
+			}
+		}
+		System.out.println(list);
+	}
+}
+		
+					
