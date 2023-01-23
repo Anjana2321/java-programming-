@@ -1,0 +1,26 @@
+import java.io.*;
+import java.lang.*;
+import java.util.*;
+class bank{
+	public static void main(String args[]){
+ 		Hashtable<Integer,String> map= new Hashtable<Integer,String>();
+		Scanner a=new Scanner(System.in);
+		Scanner b=new Scanner(System.in);
+		Scanner c=new Scanner(System.in);
+		System.out.print("Enter the number of data to be added :");
+		int size=a.nextInt();
+		int n;
+		for(int i=0;i<size;i++)
+		{
+			System.out.p rintln("Enter the account number : ");
+			n=b.nextInt();
+			System.out.println("Enter the customer name : ");
+			String o=c.nextLine();
+			map.put(n,o);
+		}
+		System.out.println("Initial map: "+map);
+		System.out.println("Size of the Hash table : "+map.size());
+		map.clear();
+		System.out.println("Updated hash table :"+map);
+	}
+}
