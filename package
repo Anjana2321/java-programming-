@@ -1,0 +1,9 @@
+package pack2;
+class Kaviya{
+	public static int add2(){
+		int b;
+		b=5;
+		return b;
+	}
+}
+
