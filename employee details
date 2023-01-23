@@ -1,34 +1,5 @@
-Skip to content
-Search or jump to…
-Pull requests
-Issues
-Codespaces
-Marketplace
-Explore
- 
-@Anjana2321 
-Bhavadharani2076
-/
-Java
-Public
-Fork your own copy of Bhavadharani2076/Java
-Code
-Issues
-Pull requests
-Actions
-Projects
-Security
-Insights
-Java/Employee detail
-@Bhavadharani2076
-Bhavadharani2076 Create Employee detail
-Latest commit f89b43a yesterday
- History
- 1 contributor
-36 lines (36 sloc)  1007 Bytes
-
 import java.util.Scanner;
-public class bonus {
+ class bonus {
  public static void main(String[] args) {
  Scanner in = new Scanner(System.in);
  System.out.println("Enter the grade of the employee");
