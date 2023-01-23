@@ -1,0 +1,10 @@
+import java.applet.Applet;
+import java.awt.*;
+class FirstApplet extends Applet{
+	public void paint(Graphics g){
+		g.drawRect(0,0,250,100);
+		g.setColor(Color.red);
+		g.drawString("Look at me, I am a java applet !",10,50);
+	}
+}
+
